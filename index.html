@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="icon" type="image/x-icon" href="./assets/favico/default.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+  <link rel="stylesheet" href="styles/tilt-effect.css">
+</head>
+
+  <div id="terminal">
+    <div id="terminal-header">
+      <div id="terminal-buttons">
+
+        <div class="terminal-button" id="close-button"></div>
+        <div class="terminal-button" id="minimize-button"></div>
+        <div class="terminal-button" id="maximize-button"></div>
+      </div>
+    </div>
+    <div id="terminal-content">
+      <p id="terminal-text"></p>
+    </div>
+  </div>
+
+  <div id="video-background">
+    <video autoplay muted loop playsinline webkit-playsinline tabindex="-1" id="myVideo">
+      <source src="./assets/back/oshi no ko.mp4" type="video/mp4">
+    </video>
+  </div>
+
+    <div id="audio-background">
+      <div id="music-controls">
+      </div>
+    </div>
+
+    </div>
+    <div id="video-overlay"></div>
+    <div id="blurred-box" class="tilt-element">
+      <img id="profile-picture" src="assets/kaka3.png" alt="Profile Picture">
+      <img id="avatar-frame" src="" alt="Avatar Frame">
+      <p id="username-container" style="color: white; font-weight: bold; font-size: 32px;">
+        <span id="username">CODER IN 2026</span>
+        <span id="typing-cursor">|</span>
+      </p>
+      <div class="badges-container">
+        <img src="assets/developer.png" alt="dev badge">
+        <img src="assets/love.png" alt="heart badge">
+        <img src="assets/music.png" alt="music badge">
+      </div>
+      <div class="lang-container">
+        <img src="assets/python.png" alt="python">
+        <img src="assets/vscode.png" alt="visual studio code">
+      </div>
+
+      <div class="user-description">
+        <p id="user-description" style="color: white;">
+          DEVELOPER 2026 <br>TRÙM CODE DISCORD S1 VN<br>ĐẸP TRAI RẠNG NGỜI!<br>
+        </p>
+      </div>
+       
+      <div class="discord-widget">
+        <div class="discord-content">
+          <div class="discord-icon">
+            <img id="discord-avatar" src="" alt="Discord Avatar" draggable="false" loading="lazy">
+          </div>
+          <div class="discord-meta">
+            <b id="discord-username"></b>
+            <div>
+              <span id="discord-status-dot"></span>
+              <span id="discord-status-text"></span>
+            </div>
+          </div>
+        </div>
+        <div class="discord-activity">
+          <div id="discord-activity-info">
+            <div id="discord-album-art"></div>
+            <div class="discord-activity-content">
+              <div id="discord-activity-name"></div>
+              <div id="discord-activity-details"></div>
+              <div id="discord-activity-state"></div>
+            </div>
+          </div>
+          <div id="discord-no-activity">Discord: IOS COMMUITY<br>Sivi beautiful 2026!</div>
+        </div>
+      </div>
+
+      <div class="links">
+        <a href="https://dsc.gg/luckybeo12" target="_blank">
+          <i class="fab fa-discord"></i>
+        </a> 
+        <a href="https://www.tiktok.com/" target="_blank">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script data-cfasync="false" src="scripts/email-decode.min.js"></script><script src="scripts/lanyard.js"></script>
+  <script src="scripts/discord.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/title.js"></script>
+  <script src="scripts/username-animation.js"></script>
+  <script src="scripts/tilt-effect.js"></script>
+  <script src="scripts/audio-visualizer.js"></script>
+  <script src="scripts/neko.js"></script>
+  <script src="scripts/neko-init.js"></script>
+  <script src="scripts/music.js"></script>
+  <script>
+    const ua = navigator.userAgent.toLowerCase();
+    const isInApp =
+      ua.includes("tiktok") ||                                  
+      if (isInApp) {
+      document.body.classList.add("in-app");
+    }
+  </script>
+</body>
+</html>
